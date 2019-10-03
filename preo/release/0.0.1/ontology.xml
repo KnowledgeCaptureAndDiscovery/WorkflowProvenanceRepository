@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/okn/wpr/preo#"
-     xml:base="https://w3id.org/okn/wpr/preo"
+<rdf:RDF xmlns="https://w3id.org/okn/o/preo#"
+     xml:base="https://w3id.org/okn/o/preo"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,13 +8,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/okn/wpr/preo">
-        <owl:versionIRI rdf:resource="https://w3id.org/okn/wpr/preo/0.0.1"/>
+    <owl:Ontology rdf:about="https://w3id.org/okn/o/preo">
+        <owl:versionIRI rdf:resource="https://w3id.org/okn/o/preo/0.0.1"/>
         <terms:contributor xml:lang="en">Maximiliano Osorio</terms:contributor>
         <terms:creator xml:lang="en">Daniel Garijo</terms:creator>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/2.0/"/>
         <vann:preferredNamespacePrefix xml:lang="en">preo</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/okn/wpr/preo"/>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/okn/o/preo"/>
         <rdfs:comment xml:lang="en">An ontology designed to represent simple provenance executions and ensemble summaries.</rdfs:comment>
         <rdfs:label xml:lang="en">PRovenance Ensemble Ontology</rdfs:label>
         <owl:versionInfo>0.0.1</owl:versionInfo>
@@ -131,11 +131,11 @@
     
 
 
-    <!-- https://w3id.org/okn/wpr/preo#hadTheme -->
+    <!-- https://w3id.org/okn/o/preo#hadTheme -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/wpr/preo#hadTheme">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/preo#hadTheme">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/preo#ProvenanceEnsemble"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment xml:lang="en">Main theme of the ensemble, i.e., the target parameter, software configuration or input that is being varied.</rdfs:comment>
         <rdfs:label>had theme</rdfs:label>
@@ -203,11 +203,11 @@
     
 
 
-    <!-- https://w3id.org/okn/wpr/preo#includedExecutionID -->
+    <!-- https://w3id.org/okn/o/preo#includedExecutionID -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/wpr/preo#includedExecutionID">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/preo#includedExecutionID">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/preo#ProvenanceEnsemble"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Pointer to an execution id that was included as part of the ensemble. An ensemble will point out to several execution IDs. These execution IDs may represent other activity executions.</rdfs:comment>
         <rdfs:label xml:lang="en">included execution ID</rdfs:label>
@@ -272,22 +272,22 @@
     
 
 
+    <!-- https://w3id.org/okn/o/preo#ProvenanceEnsemble -->
+
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/preo#ProvenanceEnsemble">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">A special type of activity representing an ensemble of executions submitted to a workflow system. The ensemble may be on parameters (e.g., range variation), inputs (e.g., varying several files) or even the software executed (in case multiple software steps are to be executed with the same inputs).</rdfs:comment>
+        <rdfs:label xml:lang="en">Provenance ensemble</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/sd#SoftwareConfiguration -->
 
 
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#SoftwareConfiguration">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/okn/o/sd#"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/wpr/preo#ProvenanceEnsemble -->
-
-
-    <owl:Class rdf:about="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:comment xml:lang="en">A special type of activity representing an ensemble of executions submitted to a workflow system. The ensemble may be on parameters (e.g., range variation), inputs (e.g., varying several files) or even the software executed (in case multiple software steps are to be executed with the same inputs).</rdfs:comment>
-        <rdfs:label xml:lang="en">Provenance ensemble</rdfs:label>
     </owl:Class>
     
 

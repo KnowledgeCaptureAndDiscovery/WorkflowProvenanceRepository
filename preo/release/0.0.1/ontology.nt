@@ -1,13 +1,13 @@
-<https://w3id.org/okn/wpr/preo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/okn/wpr/preo> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/okn/wpr/preo/0.0.1> .
-<https://w3id.org/okn/wpr/preo> <http://purl.org/dc/terms/contributor> "Maximiliano Osorio"@en .
-<https://w3id.org/okn/wpr/preo> <http://purl.org/dc/terms/creator> "Daniel Garijo"@en .
-<https://w3id.org/okn/wpr/preo> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/2.0/> .
-<https://w3id.org/okn/wpr/preo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "preo"@en .
-<https://w3id.org/okn/wpr/preo> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/okn/wpr/preo> .
-<https://w3id.org/okn/wpr/preo> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology designed to represent simple provenance executions and ensemble summaries."@en .
-<https://w3id.org/okn/wpr/preo> <http://www.w3.org/2000/01/rdf-schema#label> "PRovenance Ensemble Ontology"@en .
-<https://w3id.org/okn/wpr/preo> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<https://w3id.org/okn/o/preo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/okn/o/preo> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/okn/o/preo/0.0.1> .
+<https://w3id.org/okn/o/preo> <http://purl.org/dc/terms/contributor> "Maximiliano Osorio"@en .
+<https://w3id.org/okn/o/preo> <http://purl.org/dc/terms/creator> "Daniel Garijo"@en .
+<https://w3id.org/okn/o/preo> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/2.0/> .
+<https://w3id.org/okn/o/preo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "preo"@en .
+<https://w3id.org/okn/o/preo> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/okn/o/preo> .
+<https://w3id.org/okn/o/preo> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology designed to represent simple provenance executions and ensemble summaries."@en .
+<https://w3id.org/okn/o/preo> <http://www.w3.org/2000/01/rdf-schema#label> "PRovenance Ensemble Ontology"@en .
+<https://w3id.org/okn/o/preo> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
 # 
 # 
 # #################################################################
@@ -67,12 +67,12 @@
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
 # 
-# https://w3id.org/okn/wpr/preo#hadTheme
-<https://w3id.org/okn/wpr/preo#hadTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/okn/wpr/preo#hadTheme> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> .
-<https://w3id.org/okn/wpr/preo#hadTheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
-<https://w3id.org/okn/wpr/preo#hadTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Main theme of the ensemble, i.e., the target parameter, software configuration or input that is being varied."@en .
-<https://w3id.org/okn/wpr/preo#hadTheme> <http://www.w3.org/2000/01/rdf-schema#label> "had theme" .
+# https://w3id.org/okn/o/preo#hadTheme
+<https://w3id.org/okn/o/preo#hadTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/preo#hadTheme> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/preo#ProvenanceEnsemble> .
+<https://w3id.org/okn/o/preo#hadTheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/okn/o/preo#hadTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Main theme of the ensemble, i.e., the target parameter, software configuration or input that is being varied."@en .
+<https://w3id.org/okn/o/preo#hadTheme> <http://www.w3.org/2000/01/rdf-schema#label> "had theme" .
 # 
 # https://www.opmw.org/ontology/hadSoftwareConfiguration
 <https://www.opmw.org/ontology/hadSoftwareConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -106,12 +106,12 @@
 <https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
 # 
-# https://w3id.org/okn/wpr/preo#includedExecutionID
-<https://w3id.org/okn/wpr/preo#includedExecutionID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/wpr/preo#includedExecutionID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> .
-<https://w3id.org/okn/wpr/preo#includedExecutionID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/okn/wpr/preo#includedExecutionID> <http://www.w3.org/2000/01/rdf-schema#comment> "Pointer to an execution id that was included as part of the ensemble. An ensemble will point out to several execution IDs. These execution IDs may represent other activity executions."@en .
-<https://w3id.org/okn/wpr/preo#includedExecutionID> <http://www.w3.org/2000/01/rdf-schema#label> "included execution ID"@en .
+# https://w3id.org/okn/o/preo#includedExecutionID
+<https://w3id.org/okn/o/preo#includedExecutionID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/preo#includedExecutionID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/preo#ProvenanceEnsemble> .
+<https://w3id.org/okn/o/preo#includedExecutionID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/preo#includedExecutionID> <http://www.w3.org/2000/01/rdf-schema#comment> "Pointer to an execution id that was included as part of the ensemble. An ensemble will point out to several execution IDs. These execution IDs may represent other activity executions."@en .
+<https://w3id.org/okn/o/preo#includedExecutionID> <http://www.w3.org/2000/01/rdf-schema#label> "included execution ID"@en .
 # 
 # https://www.opmw.org/ontology/executionStatus
 <https://www.opmw.org/ontology/executionStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -142,15 +142,15 @@
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
 # 
+# https://w3id.org/okn/o/preo#ProvenanceEnsemble
+<https://w3id.org/okn/o/preo#ProvenanceEnsemble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/okn/o/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#comment> "A special type of activity representing an ensemble of executions submitted to a workflow system. The ensemble may be on parameters (e.g., range variation), inputs (e.g., varying several files) or even the software executed (in case multiple software steps are to be executed with the same inputs)."@en .
+<https://w3id.org/okn/o/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#label> "Provenance ensemble"@en .
+# 
 # https://w3id.org/okn/o/sd#SoftwareConfiguration
 <https://w3id.org/okn/o/sd#SoftwareConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#SoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/okn/o/sd#> .
-# 
-# https://w3id.org/okn/wpr/preo#ProvenanceEnsemble
-<https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
-<https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#comment> "A special type of activity representing an ensemble of executions submitted to a workflow system. The ensemble may be on parameters (e.g., range variation), inputs (e.g., varying several files) or even the software executed (in case multiple software steps are to be executed with the same inputs)."@en .
-<https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#label> "Provenance ensemble"@en .
 # 
 # https://www.opmw.org/ontology/WorkflowExecutionProcess
 <https://www.opmw.org/ontology/WorkflowExecutionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

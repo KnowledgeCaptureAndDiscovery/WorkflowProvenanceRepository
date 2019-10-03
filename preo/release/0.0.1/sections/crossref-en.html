@@ -19,7 +19,7 @@ This section provides details for each class and property defined by PRovenance 
          </a>
       </li>
       <li>
-         <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble">Provenance ensemble</a>
+         <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/o/preo#ProvenanceEnsemble">Provenance ensemble</a>
       </li>
       <li>
          <a href="#https://w3id.org/okn/o/sd#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">
@@ -49,7 +49,7 @@ This section provides details for each class and property defined by PRovenance 
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble">Provenance ensemble</a>
+            <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/o/preo#ProvenanceEnsemble">Provenance ensemble</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://www.opmw.org/ontology/WorkflowExecutionProcess"
                title="https://www.opmw.org/ontology/WorkflowExecutionProcess">workflow execution process</a>
             <sup class="type-c" title="class">c</sup>
@@ -111,7 +111,7 @@ This section provides details for each class and property defined by PRovenance 
          <dt>is in range of</dt>
          <dd>
             <a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">generated</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hadTheme" title="https://w3id.org/okn/wpr/preo#hadTheme">had theme</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hadTheme" title="https://w3id.org/okn/o/preo#hadTheme">had theme</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -122,7 +122,7 @@ This section provides details for each class and property defined by PRovenance 
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/okn/wpr/preo#ProvenanceEnsemble</p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/preo#ProvenanceEnsemble</p>
       <div class="comment">
          <span class="markdown">A special type of activity representing an ensemble of executions submitted to a workflow system. The ensemble may be on parameters (e.g., range variation), inputs (e.g., varying several files) or even the software executed (in case multiple software steps are to be executed with the same inputs).</span>
       </div>
@@ -134,9 +134,8 @@ This section provides details for each class and property defined by PRovenance 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hadTheme" title="https://w3id.org/okn/wpr/preo#hadTheme">had theme</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#includedExecutionID"
-               title="https://w3id.org/okn/wpr/preo#includedExecutionID">included execution ID</a>
+            <a href="#hadTheme" title="https://w3id.org/okn/o/preo#hadTheme">had theme</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#includedExecutionID" title="https://w3id.org/okn/o/preo#includedExecutionID">included execution ID</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -205,7 +204,7 @@ This section provides details for each class and property defined by PRovenance 
          </a>
       </li>
       <li>
-         <a href="#hadTheme" title="https://w3id.org/okn/wpr/preo#hadTheme">had theme</a>
+         <a href="#hadTheme" title="https://w3id.org/okn/o/preo#hadTheme">had theme</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">
@@ -291,7 +290,7 @@ This section provides details for each class and property defined by PRovenance 
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/okn/wpr/preo#hadTheme</p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/preo#hadTheme</p>
       <div class="comment">
          <span class="markdown">Main theme of the ensemble, i.e., the target parameter, software configuration or input that is being varied.</span>
       </div>
@@ -299,7 +298,7 @@ This section provides details for each class and property defined by PRovenance 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble">Provenance ensemble</a>
+               <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/o/preo#ProvenanceEnsemble">Provenance ensemble</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -410,8 +409,7 @@ This section provides details for each class and property defined by PRovenance 
          </a>
       </li>
       <li>
-         <a href="#includedExecutionID"
-            title="https://w3id.org/okn/wpr/preo#includedExecutionID">included execution ID</a>
+         <a href="#includedExecutionID" title="https://w3id.org/okn/o/preo#includedExecutionID">included execution ID</a>
       </li>
       <li>
          <a href="#https://schema.org/name" title="https://schema.org/name">
@@ -486,7 +484,7 @@ This section provides details for each class and property defined by PRovenance 
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/okn/wpr/preo#includedExecutionID</p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/preo#includedExecutionID</p>
       <div class="comment">
          <span class="markdown">Pointer to an execution id that was included as part of the ensemble. An ensemble will point out to several execution IDs. These execution IDs may represent other activity executions.</span>
       </div>
@@ -494,7 +492,7 @@ This section provides details for each class and property defined by PRovenance 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble">Provenance ensemble</a>
+               <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/o/preo#ProvenanceEnsemble">Provenance ensemble</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
