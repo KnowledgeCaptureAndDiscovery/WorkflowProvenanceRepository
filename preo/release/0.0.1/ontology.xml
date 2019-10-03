@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/okn/wpr/preo#"
+     xml:base="https://w3id.org/okn/wpr/preo"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/okn/wpr/preo">
+        <owl:versionIRI rdf:resource="https://w3id.org/okn/wpr/preo/0.0.1"/>
+        <terms:contributor xml:lang="en">Maximiliano Osorio</terms:contributor>
+        <terms:creator xml:lang="en">Daniel Garijo</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/2.0/"/>
+        <vann:preferredNamespacePrefix xml:lang="en">preo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/okn/wpr/preo"/>
+        <rdfs:comment xml:lang="en">An ontology designed to represent simple provenance executions and ensemble summaries.</rdfs:comment>
+        <rdfs:label xml:lang="en">PRovenance Ensemble Ontology</rdfs:label>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/wpr/preo#hadTheme -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/wpr/preo#hadTheme">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">Main theme of the ensemble, i.e., the target parameter, software configuration or input that is being varied.</rdfs:comment>
+        <rdfs:label>had theme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.opmw.org/ontology/hadSoftwareConfiguration -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.opmw.org/ontology/hadSoftwareConfiguration">
+        <rdfs:domain rdf:resource="https://www.opmw.org/ontology/WorkflowExecutionProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#SoftwareConfiguration"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.opmw.org/ontology/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadEndTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#hadEndTime">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadStartTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#hadStartTime">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#value -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#value">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/name">
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/wpr/preo#includedExecutionID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/wpr/preo#includedExecutionID">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Pointer to an execution id that was included as part of the ensemble. An ensemble will point out to several execution IDs. These execution IDs may represent other activity executions.</rdfs:comment>
+        <rdfs:label xml:lang="en">included execution ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.opmw.org/ontology/executionStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.opmw.org/ontology/executionStatus">
+        <rdfs:isDefinedBy rdf:resource="https://www.opmw.org/ontology/"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.opmw.org/ontology/hadInvocationCommand -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.opmw.org/ontology/hadInvocationCommand">
+        <rdfs:isDefinedBy rdf:resource="https://www.opmw.org/ontology/"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#SoftwareConfiguration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sd#SoftwareConfiguration">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/okn/o/sd#"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/wpr/preo#ProvenanceEnsemble -->
+
+
+    <owl:Class rdf:about="https://w3id.org/okn/wpr/preo#ProvenanceEnsemble">
+        <rdfs:comment xml:lang="en">A special type of activity representing an ensemble of executions submitted to a workflow system. The ensemble may be on parameters (e.g., range variation), inputs (e.g., varying several files) or even the software executed (in case multiple software steps are to be executed with the same inputs).</rdfs:comment>
+        <rdfs:label xml:lang="en">Provenance ensemble</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.opmw.org/ontology/WorkflowExecutionProcess -->
+
+
+    <owl:Class rdf:about="https://www.opmw.org/ontology/WorkflowExecutionProcess">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.opmw.org/ontology/"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
