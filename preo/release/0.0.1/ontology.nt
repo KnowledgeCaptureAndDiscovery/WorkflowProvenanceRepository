@@ -148,6 +148,7 @@
 # 
 # https://w3id.org/okn/wpr/preo#ProvenanceEnsemble
 <https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
 <https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#comment> "A special type of activity representing an ensemble of executions submitted to a workflow system. The ensemble may be on parameters (e.g., range variation), inputs (e.g., varying several files) or even the software executed (in case multiple software steps are to be executed with the same inputs)."@en .
 <https://w3id.org/okn/wpr/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#label> "Provenance ensemble"@en .
 # 

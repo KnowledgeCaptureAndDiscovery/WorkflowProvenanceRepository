@@ -53,10 +53,10 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
+    "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
     "id" : "8",
@@ -77,13 +77,13 @@
     "id" : "15",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "1",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "20",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "22",
+    "id" : "23",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -92,7 +92,7 @@
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
+    "id" : "25",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -111,8 +111,8 @@
       "IRI-based" : "WorkflowExecutionProcess"
     },
     "attributes" : [ "external" ],
-    "id" : "3",
-    "superClasses" : [ "2" ]
+    "id" : "0",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Activity",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -128,9 +128,9 @@
     "label" : {
       "IRI-based" : "Activity"
     },
-    "subClasses" : [ "3" ],
+    "subClasses" : [ "0", "5" ],
     "attributes" : [ "external" ],
-    "id" : "2"
+    "id" : "1"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -189,7 +189,7 @@
       "IRI-based" : "Entity"
     },
     "attributes" : [ "external" ],
-    "id" : "1"
+    "id" : "3"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -213,7 +213,7 @@
       "IRI-based" : "SoftwareConfiguration"
     },
     "attributes" : [ "external" ],
-    "id" : "22"
+    "id" : "23"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "7",
@@ -232,7 +232,8 @@
     "comment" : {
       "en" : "A special type of activity representing an ensemble of executions submitted to a workflow system. The ensemble may be on parameters (e.g., range variation), inputs (e.g., varying several files) or even the software executed (in case multiple software steps are to be executed with the same inputs)."
     },
-    "id" : "5"
+    "id" : "5",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Agent",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -249,10 +250,10 @@
       "IRI-based" : "Agent"
     },
     "attributes" : [ "external" ],
-    "id" : "24"
+    "id" : "25"
   } ],
   "property" : [ {
-    "id" : "0",
+    "id" : "2",
     "type" : "owl:objectProperty"
   }, {
     "id" : "4",
@@ -274,7 +275,7 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "18",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "19",
     "type" : "owl:datatypeProperty"
@@ -282,22 +283,25 @@
     "id" : "21",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "23",
-    "type" : "owl:objectProperty"
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "25",
+    "id" : "24",
     "type" : "owl:objectProperty"
   }, {
     "id" : "26",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "2",
+    "range" : "1",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -309,13 +313,13 @@
     "label" : {
       "IRI-based" : "wasGeneratedBy"
     },
-    "domain" : "1",
+    "domain" : "3",
     "attributes" : [ "external", "object" ],
-    "id" : "0"
+    "id" : "2"
   }, {
     "iri" : "https://w3id.org/okn/wpr/preo#hadTheme",
     "baseIri" : "https://w3id.org/okn/wpr/preo",
-    "range" : "1",
+    "range" : "3",
     "label" : {
       "IRI-based" : "hadTheme",
       "undefined" : "had theme"
@@ -341,7 +345,7 @@
     "label" : {
       "IRI-based" : "value"
     },
-    "domain" : "1",
+    "domain" : "3",
     "attributes" : [ "external", "datatype" ],
     "id" : "6"
   }, {
@@ -381,9 +385,9 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "11"
   }, {
-    "range" : "2",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "16"
   }, {
     "iri" : "https://schema.org/name",
@@ -404,6 +408,25 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "17"
   }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/okn/wpr/preo#includedExecutionID",
+    "baseIri" : "https://w3id.org/okn/wpr/preo",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "includedExecutionID",
+      "en" : "included execution ID"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Pointer to an execution id that was included as part of the ensemble. An ensemble will point out to several execution IDs. These execution IDs may represent other activity executions."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
     "iri" : "https://www.opmw.org/ontology/hadInvocationCommand",
     "baseIri" : "https://www.opmw.org/ontology",
     "range" : "13",
@@ -420,21 +443,7 @@
     },
     "domain" : "8",
     "attributes" : [ "external", "datatype" ],
-    "id" : "18"
-  }, {
-    "iri" : "https://w3id.org/okn/wpr/preo#includedExecutionID",
-    "baseIri" : "https://w3id.org/okn/wpr/preo",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "includedExecutionID",
-      "en" : "included execution ID"
-    },
-    "domain" : "5",
-    "comment" : {
-      "en" : "Pointer to an execution id that was included as part of the ensemble. An ensemble will point out to several execution IDs. These execution IDs may represent other activity executions."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "19"
+    "id" : "21"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadStartTime",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -452,11 +461,11 @@
     },
     "domain" : "8",
     "attributes" : [ "external", "datatype" ],
-    "id" : "21"
+    "id" : "22"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "24",
+    "range" : "25",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -468,13 +477,13 @@
     "label" : {
       "IRI-based" : "wasAssociatedWith"
     },
-    "domain" : "2",
+    "domain" : "1",
     "attributes" : [ "external", "object" ],
-    "id" : "23"
+    "id" : "24"
   }, {
     "iri" : "https://www.opmw.org/ontology/hadSoftwareConfiguration",
     "baseIri" : "https://www.opmw.org/ontology",
-    "range" : "22",
+    "range" : "23",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -486,9 +495,9 @@
     "label" : {
       "IRI-based" : "hadSoftwareConfiguration"
     },
-    "domain" : "3",
+    "domain" : "0",
     "attributes" : [ "external", "object" ],
-    "id" : "25"
+    "id" : "26"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadEndTime",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -506,12 +515,12 @@
     },
     "domain" : "8",
     "attributes" : [ "external", "datatype" ],
-    "id" : "26"
+    "id" : "27"
   }, {
     "iri" : "http://www.w3.org/ns/prov#generated",
-    "inverse" : "0",
+    "inverse" : "2",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "3",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -523,8 +532,8 @@
     "label" : {
       "IRI-based" : "generated"
     },
-    "domain" : "2",
+    "domain" : "1",
     "attributes" : [ "external", "object" ],
-    "id" : "27"
+    "id" : "28"
   } ]
 }
