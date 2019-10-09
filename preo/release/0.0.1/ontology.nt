@@ -53,6 +53,8 @@
 # 
 # http://www.w3.org/ns/prov#used
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
 # 
 # http://www.w3.org/ns/prov#wasAssociatedWith
@@ -76,8 +78,9 @@
 # 
 # https://www.opmw.org/ontology/hadSoftwareConfiguration
 <https://www.opmw.org/ontology/hadSoftwareConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://www.opmw.org/ontology/hadSoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.opmw.org/ontology/WorkflowExecutionProcess> .
+<https://www.opmw.org/ontology/hadSoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/preo#ExecutionActivity> .
 <https://www.opmw.org/ontology/hadSoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://www.opmw.org/ontology/hadSoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the software configuration used to run a software component."@en .
 <https://www.opmw.org/ontology/hadSoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.opmw.org/ontology/> .
 # 
 # 
@@ -91,10 +94,14 @@
 # 
 # http://www.w3.org/ns/prov#hadEndTime
 <http://www.w3.org/ns/prov#hadEndTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#hadEndTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#hadEndTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://www.w3.org/ns/prov#hadEndTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
 # 
 # http://www.w3.org/ns/prov#hadStartTime
 <http://www.w3.org/ns/prov#hadStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#hadStartTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#hadStartTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://www.w3.org/ns/prov#hadStartTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
 # 
 # http://www.w3.org/ns/prov#value
@@ -102,9 +109,13 @@
 <http://www.w3.org/ns/prov#value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#value> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
 # 
-# https://schema.org/name
-<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
+# https://w3id.org/okn/o/preo#hadInvocationCommand
+<https://w3id.org/okn/o/preo#hadInvocationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/preo#hadInvocationCommand> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.opmw.org/ontology/hadInvocationCommand> .
+<https://w3id.org/okn/o/preo#hadInvocationCommand> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/preo#ExecutionActivity> .
+<https://w3id.org/okn/o/preo#hadInvocationCommand> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/preo#hadInvocationCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Invocation command used for running the activity" .
+<https://w3id.org/okn/o/preo#hadInvocationCommand> <http://www.w3.org/2000/01/rdf-schema#label> "had invocation command" .
 # 
 # https://w3id.org/okn/o/preo#includedExecutionID
 <https://w3id.org/okn/o/preo#includedExecutionID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -115,6 +126,16 @@
 # 
 # https://www.opmw.org/ontology/executionStatus
 <https://www.opmw.org/ontology/executionStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.opmw.org/ontology/executionStatus> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/preo#ExecutionActivity> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/preo#ProvenanceEnsemble> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.opmw.org/ontology/executionStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://www.opmw.org/ontology/executionStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.opmw.org/ontology/> .
 # 
 # https://www.opmw.org/ontology/hadInvocationCommand
@@ -142,6 +163,12 @@
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
 # 
+# https://w3id.org/okn/o/preo#ExecutionActivity
+<https://w3id.org/okn/o/preo#ExecutionActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/preo#ExecutionActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/okn/o/preo#ExecutionActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An execution activity of a model or other software component"@en .
+<https://w3id.org/okn/o/preo#ExecutionActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Execution activity"@en .
+# 
 # https://w3id.org/okn/o/preo#ProvenanceEnsemble
 <https://w3id.org/okn/o/preo#ProvenanceEnsemble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/preo#ProvenanceEnsemble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
@@ -152,9 +179,4 @@
 <https://w3id.org/okn/o/sd#SoftwareConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#SoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/okn/o/sd#> .
 # 
-# https://www.opmw.org/ontology/WorkflowExecutionProcess
-<https://www.opmw.org/ontology/WorkflowExecutionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://www.opmw.org/ontology/WorkflowExecutionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
-<https://www.opmw.org/ontology/WorkflowExecutionProcess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.opmw.org/ontology/> .
-# 
-# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

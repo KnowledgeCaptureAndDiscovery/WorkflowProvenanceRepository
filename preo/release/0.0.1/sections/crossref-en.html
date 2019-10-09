@@ -19,17 +19,14 @@ This section provides details for each class and property defined by PRovenance 
          </a>
       </li>
       <li>
+         <a href="#ExecutionActivity" title="https://w3id.org/okn/o/preo#ExecutionActivity">Execution activity</a>
+      </li>
+      <li>
          <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/o/preo#ProvenanceEnsemble">Provenance ensemble</a>
       </li>
       <li>
          <a href="#https://w3id.org/okn/o/sd#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">
             <span>software configuration</span>
-         </a>
-      </li>
-      <li>
-         <a href="#https://www.opmw.org/ontology/WorkflowExecutionProcess"
-            title="https://www.opmw.org/ontology/WorkflowExecutionProcess">
-            <span>workflow execution process</span>
          </a>
       </li>
    </ul>
@@ -49,14 +46,16 @@ This section provides details for each class and property defined by PRovenance 
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/o/preo#ProvenanceEnsemble">Provenance ensemble</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://www.opmw.org/ontology/WorkflowExecutionProcess"
-               title="https://www.opmw.org/ontology/WorkflowExecutionProcess">workflow execution process</a>
+            <a href="#ExecutionActivity" title="https://w3id.org/okn/o/preo#ExecutionActivity">Execution activity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/o/preo#ProvenanceEnsemble">Provenance ensemble</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">generated</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#hadEndTime" title="http://www.w3.org/ns/prov#hadEndTime">had end time</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#hadStartTime" title="http://www.w3.org/ns/prov#hadStartTime">had start time</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -112,6 +111,32 @@ This section provides details for each class and property defined by PRovenance 
          <dd>
             <a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">generated</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hadTheme" title="https://w3id.org/okn/o/preo#hadTheme">had theme</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ExecutionActivity">
+      <h3>Execution activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/preo#ExecutionActivity</p>
+      <div class="comment">
+         <span class="markdown">An execution activity of a model or other software component</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hadInvocationCommand" title="https://w3id.org/okn/o/preo#hadInvocationCommand">had invocation command</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.opmw.org/ontology/hadSoftwareConfiguration"
+               title="https://www.opmw.org/ontology/hadSoftwareConfiguration">had software configuration</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -155,33 +180,6 @@ This section provides details for each class and property defined by PRovenance 
       </dl>
       <dl class="description">
          <dt>is in range of</dt>
-         <dd>
-            <a href="#https://www.opmw.org/ontology/hadSoftwareConfiguration"
-               title="https://www.opmw.org/ontology/hadSoftwareConfiguration">had software configuration</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.opmw.org/ontology/WorkflowExecutionProcess">
-      <h3>workflow execution process<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.opmw.org/ontology/WorkflowExecutionProcess</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://www.opmw.org/ontology/">https://www.opmw.org/ontology/</a>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
          <dd>
             <a href="#https://www.opmw.org/ontology/hadSoftwareConfiguration"
                title="https://www.opmw.org/ontology/hadSoftwareConfiguration">had software configuration</a>
@@ -262,6 +260,9 @@ This section provides details for each class and property defined by PRovenance 
       </h3>
       <p>
          <strong>IRI:</strong> https://www.opmw.org/ontology/hadSoftwareConfiguration</p>
+      <div class="comment">
+         <span class="markdown">Link to the software configuration used to run a software component.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -272,8 +273,7 @@ This section provides details for each class and property defined by PRovenance 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://www.opmw.org/ontology/WorkflowExecutionProcess"
-                  title="https://www.opmw.org/ontology/WorkflowExecutionProcess">workflow execution process</a>
+               <a href="#ExecutionActivity" title="https://w3id.org/okn/o/preo#ExecutionActivity">Execution activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -322,6 +322,20 @@ This section provides details for each class and property defined by PRovenance 
             <a href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a>
          </dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedWith">
       <h3>was associated with<sup class="type-op" title="object property">op</sup>
@@ -398,6 +412,9 @@ This section provides details for each class and property defined by PRovenance 
          </a>
       </li>
       <li>
+         <a href="#hadInvocationCommand" title="https://w3id.org/okn/o/preo#hadInvocationCommand">had invocation command</a>
+      </li>
+      <li>
          <a href="#https://www.opmw.org/ontology/hadInvocationCommand"
             title="https://www.opmw.org/ontology/hadInvocationCommand">
             <span>had invocation command</span>
@@ -410,11 +427,6 @@ This section provides details for each class and property defined by PRovenance 
       </li>
       <li>
          <a href="#includedExecutionID" title="https://w3id.org/okn/o/preo#includedExecutionID">included execution ID</a>
-      </li>
-      <li>
-         <a href="#https://schema.org/name" title="https://schema.org/name">
-            <span>name</span>
-         </a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/prov#value" title="http://www.w3.org/ns/prov#value">
@@ -435,6 +447,22 @@ This section provides details for each class and property defined by PRovenance 
             <a href="https://www.opmw.org/ontology/">https://www.opmw.org/ontology/</a>
          </dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ExecutionActivity" title="https://w3id.org/okn/o/preo#ExecutionActivity">Execution activity</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#ProvenanceEnsemble" title="https://w3id.org/okn/o/preo#ProvenanceEnsemble">Provenance ensemble</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="http://www.w3.org/ns/prov#hadEndTime">
       <h3>had end time<sup class="type-dp" title="data property">dp</sup>
@@ -449,6 +477,49 @@ This section provides details for each class and property defined by PRovenance 
             <a href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a>
          </dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hadInvocationCommand">
+      <h3>had invocation command<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/preo#hadInvocationCommand</p>
+      <div class="comment">
+         <span class="markdown">Invocation command used for running the activity</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://www.opmw.org/ontology/hadInvocationCommand"
+                  title="https://www.opmw.org/ontology/hadInvocationCommand">had invocation command</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ExecutionActivity" title="https://w3id.org/okn/o/preo#ExecutionActivity">Execution activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="https://www.opmw.org/ontology/hadInvocationCommand">
       <h3>had invocation command<sup class="type-dp" title="data property">dp</sup>
@@ -463,6 +534,15 @@ This section provides details for each class and property defined by PRovenance 
             <a href="https://www.opmw.org/ontology/">https://www.opmw.org/ontology/</a>
          </dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hadInvocationCommand" title="https://w3id.org/okn/o/preo#hadInvocationCommand">had invocation command</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="http://www.w3.org/ns/prov#hadStartTime">
       <h3>had start time<sup class="type-dp" title="data property">dp</sup>
@@ -477,6 +557,19 @@ This section provides details for each class and property defined by PRovenance 
             <a href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a>
          </dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="includedExecutionID">
       <h3>included execution ID<sup class="type-dp" title="data property">dp</sup>
@@ -501,20 +594,6 @@ This section provides details for each class and property defined by PRovenance 
             </dd>
          </dl>
       </div>
-   </div>
-   <div class="entity" id="https://schema.org/name">
-      <h3>name<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://schema.org/name</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://schema.org/">https://schema.org/</a>
-         </dd>
-      </dl>
    </div>
    <div class="entity" id="http://www.w3.org/ns/prov#value">
       <h3>value<sup class="type-dp" title="data property">dp</sup>
